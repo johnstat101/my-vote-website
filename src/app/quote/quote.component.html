@@ -12,7 +12,7 @@
                     <button (click)='toggleDetails(i)'>Details</button>
                 </div>
                 <div *ngIf='quote.showDescription'>
-                    <app-quote-details></app-quote-details>
+                    <app-quote-details [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-details>
                 </div>
             </div>
         </div>
