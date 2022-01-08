@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote(1,'john Kimani','Never outshine your master',0,0,new Date()),
+    new Quote(1,'john Kimani','Never outshine your master',0,0,new Date(2020,1,1)),
   ]
   
   addNewQuote(quote:any){
