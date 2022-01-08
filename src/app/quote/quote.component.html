@@ -7,7 +7,13 @@
             <h2>Quotes</h2>
             <hr>
             <div *ngFor="let quote of quotes; let i = index">
-                <p>{{quote.quote}}</p>
+                <div>
+                    <p>{{quote.quote}}</p>
+                    <button>Details</button>
+                </div>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-details></app-quote-details>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
