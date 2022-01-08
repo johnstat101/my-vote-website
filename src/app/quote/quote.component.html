@@ -8,7 +8,7 @@
             <hr>
             <div *ngFor="let quote of quotes; let i = index">
                 <div>
-                    <p>{{quote.quote}}</p>
+                    <p>{{quote.createdDate}}</p>
                     <button (click)='toggleDetails(i)'>Details</button>
                 </div>
                 <div *ngIf='quote.showDescription'>
