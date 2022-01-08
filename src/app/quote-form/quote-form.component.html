@@ -1,17 +1,17 @@
 <div class="container-fluid">
     <h2 class="text-center">Create New Quote</h2>
     <hr>
-    <form action="">
+    <form #quoteForm='ngForm'>
         <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" name="author" id="author" class="form-control" required>
+            <input type="text" name="author" id="author" class="form-control" [(ngModel)]="newQuote.author" #author='ngModel' required>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p>author name is required</p>
             </div>
         </div>
         <div class="form-group">
             <label for="quote">Enter Your Quote Here</label>
-            <input type="text" name="quote" id="quote" class="form-control" required>
+            <input type="text" name="quote" id="quote" class="form-control" [(ngModel)]="newQuote.quote" #quote='ngModel' required>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>quote is required</p>
             </div>
