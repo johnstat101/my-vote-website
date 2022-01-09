@@ -46,6 +46,21 @@ export class QuoteComponent implements OnInit {
 
   }
 
+  preNum!:number
+  lastNum!:number
+  counter!:number
+
+  highestUpvote(){
+    this.preNum = 0
+    this.lastNum = 0
+
+    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+      this.lastNum = this.quotes[this.counter].upVote;
+      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    }
+    return  this.preNum
+  }
+
   constructor() { }
 
   ngOnInit(): void {
