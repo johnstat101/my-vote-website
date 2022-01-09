@@ -37,14 +37,12 @@ export class QuoteComponent implements OnInit {
   }
 
   upVoteFn(index:number){
-    let upVoteTotal = this.quotes[index].upVote;
-    this.quotes[index].upVote = upVoteTotal+1;
+    this.quotes[index].upVote += 1;
 
   }
 
   downVoteFn(index:number){
-    let downVoteTotal = this.quotes[index].downVote;
-    this.quotes[index].downVote = downVoteTotal+1;
+    this.quotes[index].downVote += 1;
 
   }
 

@@ -1,0 +1,13 @@
+#dislikes {
+    margin: 10px;
+    background-color: brown;
+    color: white;
+}
+
+#quotes {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 3px 2px black;
+}
