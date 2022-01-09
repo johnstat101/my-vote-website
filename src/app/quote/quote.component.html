@@ -8,8 +8,11 @@
             <hr>
             <div *ngFor="let quote of quotes; let i = index">
                 <div>
-                    <p>{{quote.createdDate}}</p>
-                    <button (click)='toggleDetails(i)'>Details</button>
+                    <p>{{i+1}}. {{quote.quote}}
+                        <button (click)="upVoteFn(i)">upVote</button> {{quote.upVote}}
+                        <button (click)="downVoteFn(i)">downVote</button>{{quote.downVote}}
+                        <button (click)='toggleDetails(i)'>Details</button>
+                    </p>
                 </div>
                 <div *ngIf='quote.showDescription'>
                     <app-quote-details [quote]='quote' (isDelete)='deleteQuote($event,i)'></app-quote-details>
