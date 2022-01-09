@@ -1,4 +1,5 @@
-<p>Author: {{quote.author}}</p>
+<p>This quote was created on {{quote.createdDate|date}}; {{quote.createdDate|dateCount}} days ago</p>
 <p>UpVotes: {{quote.upVote}}, DownVotes: {{quote.downVote}}</p>
-<p>This quote was created {{quote.createdDate|dateCount}} days ago</p>
+<p>Author: {{quote.author}}</p>
+<p>Posted by {{quote.name}}</p>
 <button (click)="quoteDelete(true)">Delete Quote</button>

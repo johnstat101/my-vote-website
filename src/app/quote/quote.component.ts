@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote(1,'John Kimani','Never outshine your master',0,0,new Date(2022,0,1)),
-    new Quote(2,'Joe Kennedy','When the going gets tough, the tough get going',0,0,new Date(2021,9,1)),
-    new Quote(3,'Mahatma Gandhi','You must be the change you wish to see',0,0,new Date(2022,0,6)),
-    new Quote(4,'Robert H. Schuller','Tough times never last but tough people do',0,0,new Date(2021,10,1)),
-    new Quote(5,'Stephen King','Get busy living or get busy dying',0,0,new Date(2021,5,10)),
+    new Quote(1,"Jonte",'John Kimani','Never outshine your master',0,0,new Date(2022,0,1)),
+    new Quote(2,"Joe",'Joe Kennedy','When the going gets tough, the tough get going',0,0,new Date(2021,9,1)),
+    new Quote(3,"Jane",'Mahatma Gandhi','You must be the change you wish to see',0,0,new Date(2022,0,6)),
+    new Quote(4,"Rob",'Robert H. Schuller','Tough times never last but tough people do',0,0,new Date(2021,10,1)),
+    new Quote(5,"Steve",'Stephen King','Get busy living or get busy dying',0,0,new Date(2021,5,10)),
   ]
   
   addNewQuote(quote:any){
