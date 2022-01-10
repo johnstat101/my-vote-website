@@ -9,10 +9,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## User Requirements
 The application allows a user to:
 
-Create a new quote.
-Upvote or downvote a quote.
-Delete a quote
-See the number of upvotes and number of downvotes for each quote.
+1. Create a new quote.
+2. Upvote or downvote a quote.
+3. Delete a quote
+4. See the number of upvotes and number of downvotes for each quote.
 
 ## Development server
 
