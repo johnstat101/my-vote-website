@@ -1,6 +1,18 @@
 # Quotes
+By John Kimani
+
+## Description
+This project entails a web application that allows users to create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+
+## User Requirements
+The application allows a user to:
+
+Create a new quote.
+Upvote or downvote a quote.
+Delete a quote
+See the number of upvotes and number of downvotes for each quote.
 
 ## Development server
 

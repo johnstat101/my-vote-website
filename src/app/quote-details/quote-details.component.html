@@ -1,7 +1,7 @@
 <div id="details">
-    <p>This quote was created on {{quote.createdDate|date}}; {{quote.createdDate|dateCount}} days ago</p>
-    <p>UpVotes: {{quote.upVote}}, DownVotes: {{quote.downVote}}</p>
+    <p>This quote was created on <span> {{quote.createdDate|date}}; {{quote.createdDate|dateCount}} days ago</span></p>
+    <p>UpVotes: <span>{{quote.upVote}}</span>, DownVotes: <span>{{quote.downVote}}</span></p>
     <p>Author: {{quote.author}}</p>
-    <p>Posted by: {{quote.name}}</p>
+    <p><span>Posted by: {{quote.name}}</span></p>
     <button class="btn btn-sm btn-danger" id="delete" (click)="quoteDelete(true)">Delete Quote</button>
 </div>
